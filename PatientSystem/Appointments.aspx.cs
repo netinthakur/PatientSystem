@@ -83,7 +83,7 @@ namespace PatientSystem
             mdl.DoctorID = Guid.Parse(ddlDoctor.SelectedValue);
             mdl.PatientID = Guid.Parse(ddlPatient.SelectedValue);
             mdl.Timing = txtTiming.Text.Trim();
-            mdl.AppointmentDate = Convert.ToDateTime(txtAppointment.Text.Trim());
+            00mdl.AppointmentDate = Convert.ToDateTime(txtAppointment.Text.Trim());
             if (hdnValue.Value != "")
                 mdl.ID = Guid.Parse(hdnValue.Value);
             bool result = _service.InsertUpdateAppointmentMaster(mdl);
